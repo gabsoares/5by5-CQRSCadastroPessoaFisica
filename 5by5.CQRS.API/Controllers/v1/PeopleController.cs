@@ -49,7 +49,8 @@ public sealed class PeopleController(IMediator bus) : ControllerBase
 
         return StatusCode((int)HttpStatusCode.OK, new
         {
-            Content = await bus.Send(new DeletePersonCommand(person.Id)),
+            Content = await bus.Send(new DeletePersonCommand(person.Id)
+            { Name = person.Name}),
             Notification = "Pessoa deletada com sucesso!!!"
         });
     }
