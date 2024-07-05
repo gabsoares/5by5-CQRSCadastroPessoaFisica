@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>_5by5.CQRS.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\5by5.CQRS.Domain\5by5.CQRS.Domain.csproj" />
+    <ProjectReference Include="..\5by5.CQRS.Infra\5by5.CQRS.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
